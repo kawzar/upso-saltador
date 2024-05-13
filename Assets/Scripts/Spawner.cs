@@ -12,11 +12,6 @@ public class Spawner : MonoBehaviour
 
     private float ultimoSpawnTime = 0;
 
-    private void Start()
-    {
-        transform.position = new Vector3(Screen.width + 3, transform.position.y, transform.position.z);
-    }
-
     void Update()
     {
         if (Time.time - ultimoSpawnTime > spawnTime)
